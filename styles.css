@@ -1,0 +1,110 @@
+/*iphone size 390*/
+@media screen and (min-width: 390px) and (max-width: 412px) {
+/*menu links*/
+.hamburger {
+  width: 0;
+  visibility: hidden;  /*overflow: hidden;*/
+  transition: opacity 10s 0.2s, height 1s 20s;
+  z-index: 0;
+}
+
+.bigger-header {
+  font-size: 42px;
+  text-align: center;
+  margin-top: -300px;
+}
+
+/*header & child sections*/
+.bigger-header.move-down {
+  margin-top: 15px; /* adjust this value based on the height of your menu */
+  transition: margin-top 0.1s ease-in-out;
+  z-index: 2;
+}
+
+.body-color {
+  background-color:#f7f6ef;
+}
+
+/*hamburger visibility*/
+.hamburger-icon {
+  font-size: 28px;
+  cursor: pointer;
+  width: fit-content;
+}
+  
+nav ul {
+  display:flex;
+  flex-direction: column;
+  align-items:self-start;
+  row-gap: .5em;
+  padding-left: 5.5em;
+}
+
+nav li {
+  display: flex;
+  list-style: none;
+  font-size:  1.5em;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+}
+     
+.main-content {
+  margin: 1em 1em 1em 1em;
+}
+
+/*about section*/
+#about, p {
+  border-bottom: solid 1px black;
+  width:100%;
+  margin: 5em auto 5em auto;
+  text-align: center;
+  box-shadow: bottom 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.aligned-subHeader {
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 12pt;
+  border: black 1px solid;
+}
+
+#services, td, th  {
+  text-align: center;
+  width: auto;
+  padding: 10px 2px 10px 2px;
+}
+
+#services {
+  border-top: 1px solid black;
+}
+
+table {
+  margin: auto;
+}
+
+.arrow-icon {
+  margin-left: 7em;
+  margin-right: 7em;
+  font-size: 28px;
+}
+
+.highlighted-row {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: rgb(54, 54, 54);
+}
+
+p {
+  color: rgb(53, 53, 53);
+}
+
+strong {
+  font-size: 16pt;
+}
+
+} 

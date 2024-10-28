@@ -1,38 +1,6 @@
 /*iphone size 390*/
 @media screen and (min-width: 390px) and (max-width: 412px) {
-/*menu links*/
-.hamburger {
-  width: 0;
-  visibility: hidden;  /*overflow: hidden;*/
-  transition: opacity 10s 0.2s, height 1s 20s;
-  z-index: 0;
-}
-
-.bigger-header {
-  font-size: 42px;
-  text-align: center;
-  margin-top: -300px;
-}
-
-/*header & child sections*/
-.bigger-header.move-down {
-  margin-top: 15px; /* adjust this value based on the height of your menu */
-  transition: margin-top 0.1s ease-in-out;
-  z-index: 2;
-}
-
-.body-color {
-  background-color:#f7f6ef;
-}
-
-/*hamburger visibility*/
-.hamburger-icon {
-  font-size: 28px;
-  cursor: pointer;
-  width: fit-content;
-}
-  
-nav ul {
+  nav ul {
   display:flex;
   flex-direction: column;
   align-items:self-start;
@@ -48,19 +16,55 @@ nav li {
   padding: 1em 1em 1em 1em;
 }
      
+/*menu links*/
+.hamburger {
+  width: 0;
+  visibility: hidden;  /*overflow: hidden;*/
+  transition: opacity 10s 0.2s, height 1s 20s;
+  z-index: 0;
+}
+
+/*hamburger visibility*/
+.hamburger-icon {
+  font-size: 28px;
+  cursor: pointer;
+  width: fit-content;
+}
+  
+  /*about section*/
+.bio-subHeader, p {
+  color: rgb(255, 252, 252);
+  background-color: rgb(0, 0, 46);
+  border-bottom: solid 1px black;
+  width:100%;
+  margin: 1em auto 2em auto;
+  text-align:start;
+  font-family:sans-serif;
+  box-shadow: bottom 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+#font-pop {
+  color: #f7f6ef;
+}
+.services-header {
+  font-size: 22px;
+  text-align: center;
+  margin-top: -300px;
+}
+
+/*header & child sections*/
+.services-header.move-down {
+  margin-top: 15px; /* adjust this value based on the height of your menu */
+  transition: margin-top 0.1s ease-in-out;
+  z-index: 2;
+}
+
 .main-content {
   margin: 1em 1em 1em 1em;
 }
 
-/*about section*/
-#about, p {
-  border-bottom: solid 1px black;
-  width:100%;
-  margin: 5em auto 5em auto;
-  text-align: center;
-  box-shadow: bottom 0px 4px 8px rgba(0, 0, 0, 0.2);
 
-}
 
 
 .aligned-subHeader {
@@ -80,6 +84,12 @@ nav li {
 #services {
   border-top: 1px solid black;
 }
+.body-color {
+  background-color:#f7f6ef;
+}
+
+
+
 
 table {
   margin: auto;
@@ -89,6 +99,7 @@ table {
   margin-left: 7em;
   margin-right: 7em;
   font-size: 28px;
+  border:solid black 1px;
 }
 
 .highlighted-row {

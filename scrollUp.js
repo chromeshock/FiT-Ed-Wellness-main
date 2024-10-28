@@ -2,7 +2,7 @@
 const arrowIcon = document.querySelector(".arrow-icon");
 
 if (arrowIcon) {
-    arrowIcon/addEventListener("click", () => {
+    arrowIcon.addEventListener("click", () => {
         //scrolls up to top
         scrollToTop();
     });

@@ -1,118 +1,62 @@
-/*iphone size 390*/
-@media screen and (min-width: 390px) and (max-width: 412px) {
-  nav ul {
-  display:flex;
-  flex-direction: column;
-  align-items:self-start;
-  row-gap: .5em;
-  padding-left: 5.5em;
+/* Base reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav li {
-  display: flex;
-  list-style: none;
-  font-size:  1.5em;
-  text-align: center;
-  padding: 1em 1em 1em 1em;
-}
-     
-/*menu links*/
-.hamburger {
+/* Hidden Menu Links - Overlay Effect */
+.hamburgerLinks {
+  position: fixed;  /* To make the menu fixed over other content */
+  top: 0;
+  left: 0;
   width: 0;
-  visibility: hidden;  /*overflow: hidden;*/
-  transition: opacity 10s 0.2s, height 1s 20s;
-  z-index: 0;
+  height: 100%;  /* Full height of the viewport */
+  overflow: hidden;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);  /* Dark background for the overlay */
+  transition: width 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  z-index: 5; /* High z-index to overlay on top of other content */
+  padding: 1em;  /* Add some padding for spacing the links */
 }
 
-/*hamburger visibility*/
+.hamburgerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburgerLinks li {
+  margin-bottom: 1em;
+}
+
+.hamburgerLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Hamburger Icon */
 .hamburger-icon {
   font-size: 28px;
   cursor: pointer;
   width: fit-content;
+  position: relative;
+  z-index: 10;  /* Ensure it is above the overlay menu */
+  margin: 1em;  /* Add some space from the top */
 }
-  
+
+/* Header Content */
 .bigger-header {
   text-align: center;
-  border-left: solid 1px;
-  margin-top: -300px;
-}
-  /*about section*/
-.bio-subHeader {
- 
-  border-bottom: solid 1px black;
-  width:auto;
-  
-  text-align:justify;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  margin-top: 1em;
 }
 
-
-#font-color {
-  color: black;
-}
-
-.services-header {
-  font-size: 22px;
-  text-align: center;
-  margin-top: -300px;
-}
-
-/*header & child sections*/
 .bigger-header.move-down {
-  margin-top: 15px; /* adjust this value based on the height of your menu */
-  transition: margin-top 0.1s ease-in-out;
-  z-index: 2;
+  transition: margin-top 0.3s ease-in-out;
 }
 
-
-.aligned-subHeader {
-  text-align: left;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  font-size: 12pt;
-  border: black 1px solid;
-}
-
-#services, td, th  {
-  text-align: center;
-  width: auto;
-  padding: 10px 2px 10px 2px;
-}
-
-#services {
-  border-top: 1px solid black;
-}
+/* Body Background */
 .body-color {
-  background-color:#f7f6ef;
+  background-color: #f7f6ef;
 }
-
-
-table {
-  margin: auto;
-}
-
-
-.highlighted-row {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  color: rgb(54, 54, 54);
-}
-
-p {
-  color: rgb(53, 53, 53);
-}
-
-strong {
-  font-size: 16pt;
-}
-
-.arrow-icon {
-  width: fit-content;
-  margin: 2em 0 1em 10em;
-  border:solid black 1px;
-}
-
-} 

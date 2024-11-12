@@ -11,11 +11,11 @@ body {
   top: 0;
   left: 0;
   width: 0;
-  height: 100%;  /* Full height of the viewport */
+  height: 75%;  /* Full height of the viewport */
   overflow: hidden;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.8);  /* Dark background for the overlay */
-  transition: width 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
   z-index: 5; /* High z-index to overlay on top of other content */
   padding: 1em;  /* Add some padding for spacing the links */
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .hamburgerLinks li {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .hamburgerLinks a {
@@ -44,12 +44,19 @@ body {
   position: relative;
   z-index: 10;  /* Ensure it is above the overlay menu */
   margin: 1em;  /* Add some space from the top */
+  margin-left: 13em;
 }
 
 /* Header Content */
 .bigger-header {
   text-align: center;
   margin-top: 1em;
+}
+
+.services-header {
+  font-size: 22px;
+  text-align: center;
+  margin-top: -300px;
 }
 
 .bigger-header.move-down {
@@ -59,4 +66,14 @@ body {
 /* Body Background */
 .body-color {
   background-color: #f7f6ef;
+}
+
+#services, td, th  {
+  text-align: center;
+  width: auto;
+  padding: 10px 2px 10px 2px;
+}
+
+#services {
+  border-top: 1px solid black;
 }
